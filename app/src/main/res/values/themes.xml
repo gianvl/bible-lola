@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base window theme; all visible styling is done in Compose (ui/theme/Theme.kt). -->
+    <style name="Theme.Bible" parent="android:Theme.Material.Light.NoActionBar" />
+
+    <!-- Shown while the app starts, until settings have loaded. -->
+    <style name="Theme.Bible.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/splash_background</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
+        <item name="postSplashScreenTheme">@style/Theme.Bible</item>
+    </style>
+</resources>
