@@ -86,6 +86,8 @@ fun HomeScreen(
                         selected = testament == entry,
                         onClick = { testament = entry },
                         modifier = Modifier.heightIn(min = 64.dp),
+                        selectedContentColor = MaterialTheme.colorScheme.primary,
+                        unselectedContentColor = MaterialTheme.colorScheme.onSurfaceVariant,
                         text = {
                             Text(
                                 text = if (entry == Testament.OLD) labels.oldTestament else labels.newTestament,
